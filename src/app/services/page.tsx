@@ -122,7 +122,7 @@ export default function ServicesPage() {
           <div className="text-center mb-14">
             <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">How We Work</p>
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">Our Delivery Process</h2>
-            <p className="mt-4 max-w-2xl mx-auto text-gray-500">A repeatable, transparent process refined across 200+ engagements.</p>
+            <p className="mt-4 max-w-2xl mx-auto text-gray-500">A repeatable, transparent process built from day one with clarity and speed.</p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">
             {process.map(p => (

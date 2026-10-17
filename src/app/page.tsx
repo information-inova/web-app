@@ -181,7 +181,7 @@ export default function Home() {
             <div className="mt-10 lg:hidden">
               {/* Stats row */}
               <div className="grid grid-cols-4 gap-3 text-center mb-6">
-                {[{v:"200+",l:"Projects"},{v:"120+",l:"Clients"},{v:"12+",l:"Years"},{v:"99.9%",l:"Uptime"}].map(s=>(
+                {[{v:"20+",l:"Projects"},{v:"15+",l:"Clients"},{v:"2026",l:"Founded"},{v:"99.9%",l:"Uptime"}].map(s=>(
                   <div key={s.l}>
                     <p className="text-lg font-extrabold text-gray-900">{s.v}</p>
                     <p className="text-[11px] text-gray-400 mt-0.5">{s.l}</p>
@@ -223,7 +223,7 @@ export default function Home() {
                 <p className="text-sm font-bold text-gray-900">Build. Innovate. Grow.</p>
                 <p className="text-[11px] text-gray-400 mb-4">All your digital products in one place.</p>
                 <div className="grid grid-cols-4 gap-1.5 mb-4 text-center">
-                  {[{v:"32",l:"Projects"},{v:"18",l:"Apps"},{v:"80+",l:"Clients"},{v:"99.9%",l:"Uptime"}].map(k=>(
+                  {[{v:"20+",l:"Projects"},{v:"10+",l:"Apps"},{v:"15+",l:"Clients"},{v:"99.9%",l:"Uptime"}].map(k=>(
                     <div key={k.l} className="rounded-xl bg-indigo-50 py-2 px-0.5">
                       <p className="text-xs font-extrabold text-indigo-700">{k.v}</p>
                       <p className="text-[8px] text-gray-400 mt-0.5">{k.l}</p>
@@ -428,7 +428,7 @@ export default function Home() {
             <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Our Process</p>
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">How We Deliver</h2>
             <p className="mt-4 max-w-xl mx-auto text-gray-500">
-              A transparent, repeatable delivery process refined across 200+ engagements.
+              A transparent, repeatable delivery process built from day one with clarity and speed.
             </p>
           </div>
           <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-5">

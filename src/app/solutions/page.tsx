@@ -108,7 +108,7 @@ export default function SolutionsPage() {
             <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Why Choose Inova Tech</p>
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">What Sets Us Apart</h2>
             <p className="mt-4 max-w-2xl mx-auto text-gray-500">
-              We&apos;ve refined our approach across 200+ projects in 15+ industries.
+              We&apos;ve refined our approach across every project we take on.
               Here&apos;s what clients consistently tell us makes the difference.
             </p>
           </div>

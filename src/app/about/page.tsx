@@ -20,7 +20,7 @@ const whyChoose = [
   {
     icon: "🏆",
     title: "Proven Track Record",
-    desc: "200+ products delivered across fintech, healthcare, logistics, e-commerce, and enterprise SaaS. We've seen what works — and what doesn't.",
+    desc: "Every project we ship is treated like our own product — built with care, speed, and a long-term mindset.",
   },
   {
     icon: "⚡",

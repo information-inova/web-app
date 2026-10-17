@@ -150,9 +150,9 @@ export default function Footer() {
             <span className="h-1 w-1 rounded-full bg-indigo-500 inline-block" />
             <span className="mx-1">Transform</span>
           </div>
-          <div className="flex gap-4 text-xs text-gray-400">
-            <Link href="/contact" className="hover:text-indigo-600 transition-colors">Privacy Policy</Link>
-            <Link href="/contact" className="hover:text-indigo-600 transition-colors">Terms of Service</Link>
+          <div className="flex gap-5">
+            <Link href="/privacy" className="hover:text-gray-300 transition-colors">Privacy</Link>
+            <Link href="/terms" className="hover:text-gray-300 transition-colors">Terms</Link>
           </div>
         </div>
 

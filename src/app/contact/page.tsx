@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 };
 
 const offices = [
-  { city: "India", name: "Pavan Kumar", address: "Bangalore, India", email: "information.inova@gmail.com", phone: "+91 8925246499" },
+  { city: "India", address: "Bangalore, India", email: "information.inova@gmail.com", phone: "+91 8925246499" },
 ];
 
 const faqs = [
@@ -97,8 +97,7 @@ export default function ContactPage() {
               <h2 className="text-xl font-extrabold text-gray-900 mb-5">Our Office</h2>
               {offices.map(o => (
                 <div key={o.city} className="mb-5 rounded-2xl bg-white border border-gray-100 p-6 shadow-sm hover:shadow-md transition-shadow">
-                  <p className="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-1">{o.city}</p>
-                  <p className="text-sm font-semibold text-gray-900 mb-1">{o.name}</p>
+                  <p className="text-xs font-bold text-indigo-600 uppercase tracking-widest mb-2">{o.city}</p>
                   <p className="text-sm text-gray-600 mb-3">{o.address}</p>
                   <a href={`mailto:${o.email}`} className="block text-sm font-semibold text-gray-900 hover:text-indigo-600 transition-colors">{o.email}</a>
                   <a href={`tel:${o.phone.replace(/\s/g,"")}`} className="block text-sm text-gray-500 hover:text-indigo-600 transition-colors">{o.phone}</a>

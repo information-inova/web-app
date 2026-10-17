@@ -18,8 +18,8 @@ export const posts: Post[] = [
     excerpt: "An honest deep-dive into the trade-offs of RSC adoption — what worked, what surprised us, and what we'd do differently on the next engagement.",
     date: "Oct 2026",
     read: "6 min read",
-    author: "Priya Nair",
-    authorRole: "CTO, Inova Tech",
+    author: "Inova Tech",
+    authorRole: "Engineering Team",
     content: `
 React Server Components (RSC) fundamentally change how we think about data fetching in React applications. After adopting them across three client portal projects in 2026, here's what we learned.
 
@@ -57,8 +57,8 @@ The key discipline: decide the server/client boundary upfront and document it. D
     excerpt: "Inova Tech's product team shares the architectural decisions that kept the platform stable when traffic surged unexpectedly — and the ones that didn't.",
     date: "Sep 2026",
     read: "8 min read",
-    author: "Daniel Owusu",
-    authorRole: "Head of Product, Inova Tech",
+    author: "Inova Tech",
+    authorRole: "Product Team",
     content: `
 When a logistics SaaS client hit 10,000 active users six weeks ahead of forecast, we found out quickly which of our architectural bets were right and which were expensive lessons.
 
@@ -94,8 +94,8 @@ The hardest scaling problem wasn't technical — it was communication. At 3 engi
     excerpt: "A practical walkthrough of how we wrapped an on-premise ERP with an LLM layer to unlock natural-language reporting for 800 employees.",
     date: "Aug 2026",
     read: "10 min read",
-    author: "Sofia Rossi",
-    authorRole: "Head of AI, Inova Tech",
+    author: "Inova Tech",
+    authorRole: "AI & Engineering Team",
     content: `
 The client had an on-premise ERP running on Oracle E-Business Suite. It had 14 years of operational data, 800 employees who needed insights from it, and a BI team fielding 60 ad-hoc report requests a week. They wanted natural-language querying. Here's what we built.
 
@@ -135,8 +135,8 @@ This Text-to-SQL + RAG pattern works for any structured data store with a descri
     excerpt: "We upgraded five production apps from Next.js 14/15 to 16. Here are the real-world breaking changes, migration patterns, and the features worth the effort.",
     date: "Oct 2026",
     read: "7 min read",
-    author: "Priya Nair",
-    authorRole: "CTO, Inova Tech",
+    author: "Inova Tech",
+    authorRole: "Engineering Team",
     content: `
 Next.js 16 is the biggest release since the App Router landed. We've now upgraded five production applications and have a clear picture of what's genuinely better and where the migration pain is real.
 
@@ -175,8 +175,8 @@ Total migration time across our five apps: 2–8 hours each, depending on custom
     excerpt: "Cold start times were killing our client's user retention. Here are the specific techniques — from lazy loading to Hermes bytecode — that fixed it.",
     date: "Jul 2026",
     read: "5 min read",
-    author: "Marcus Tan",
-    authorRole: "Head of Cloud & DevOps, Inova Tech",
+    author: "Inova Tech",
+    authorRole: "DevOps Team",
     content: `
 A retail client came to us with a React Native app that took 4.2 seconds to first interactive on mid-range Android devices. After three weeks of profiling and optimisation, we got it to 1.6 seconds. Here's exactly what we did.
 
@@ -218,8 +218,8 @@ The client saw a 12% improvement in day-1 retention the week after the release. 
     excerpt: "A forensic review of a £28k/month AWS bill found waste everywhere. Here's the systematic approach we used to reduce it to £14.8k.",
     date: "Jun 2026",
     read: "6 min read",
-    author: "Marcus Tan",
-    authorRole: "Head of Cloud & DevOps, Inova Tech",
+    author: "Inova Tech",
+    authorRole: "DevOps Team",
     content: `
 A scale-up came to us with a £28,000/month AWS bill that had grown 3x in 18 months while their user base had only grown 1.8x. This is a familiar pattern: infrastructure provisioned generously during a funding round and never revisited.
 
