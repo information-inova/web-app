@@ -70,9 +70,9 @@ export default function Footer() {
               <Image
                 src="/alvino-logo.png"
                 alt="Alvino Technologies"
-                width={150}
-                height={50}
-                className="h-12 w-auto object-contain"
+                width={200}
+                height={70}
+                className="h-16 w-auto object-contain"
               />
             </Link>
             <p className="text-sm leading-relaxed text-gray-500 max-w-xs">

@@ -45,7 +45,7 @@ export default function Navbar() {
             alt="Alvino Technologies"
             width={180}
             height={60}
-            className={`w-auto object-contain transition-all duration-300 ${solid ? "h-12" : "h-16"}`}
+            className={`w-auto object-contain transition-all duration-300 ${solid ? "h-16" : "h-20"}`}
             priority
           />
         </Link>
