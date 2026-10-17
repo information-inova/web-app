@@ -1,12 +1,12 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import "./globals.css";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
 export const metadata: Metadata = {
-  title: "Inova Tech — Build. Innovate. Transform.",
+  title: "Alvino Technologies — Build. Innovate. Transform.",
   description:
-    "Inova Tech is a full-service digital innovation studio delivering world-class websites, web apps, mobile apps, cloud solutions, and AI integrations that help businesses grow.",
+    "Alvino Technologies is a full-service digital innovation studio delivering world-class websites, web apps, mobile apps, cloud solutions, and AI integrations that help businesses grow.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
@@ -20,3 +20,4 @@ export default function RootLayout({ children }: LayoutProps<"/">) {
     </html>
   );
 }
+

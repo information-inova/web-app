@@ -1,10 +1,10 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "About — Inova Tech",
-  description: "Learn about Inova Tech's mission, vision, values, and the team behind our successful digital products.",
+  title: "About — Alvino Technologies",
+  description: "Learn about Alvino Technologies's mission, vision, values, and the team behind our successful digital products.",
 };
 
 const values = [
@@ -59,7 +59,7 @@ export default function AboutPage() {
           style={{background:"radial-gradient(ellipse at 80% 50%, rgba(99,102,241,0.06) 0%, transparent 60%)"}} />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-12 lg:grid-cols-2 items-center">
           <div>
-            <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-4">About Inova Tech</p>
+            <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-4">About Alvino Technologies</p>
             <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl lg:text-6xl leading-tight">
               We Build the
               <span className="block bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -67,7 +67,7 @@ export default function AboutPage() {
               </span>
             </h1>
             <p className="mt-6 text-lg text-gray-500 leading-relaxed">
-              Inova Tech is a full-service digital innovation studio. We help companies —
+              Alvino Technologies is a full-service digital innovation studio. We help companies —
               from seed-stage startups to global enterprises — design, build, and scale
               technology that creates real, measurable impact.
             </p>
@@ -77,7 +77,7 @@ export default function AboutPage() {
               style={{background:"linear-gradient(135deg,#6366f1,#a855f7)"}}>
               <div aria-hidden className="absolute inset-0 opacity-10"
                 style={{backgroundImage:"radial-gradient(circle at 30% 30%, white 1px, transparent 1px)",backgroundSize:"28px 28px"}} />
-              <Image src="/logo.png" alt="Inova Tech" width={180} height={180} className="object-contain relative z-10" />
+              <Image src="/alvino-logo.png" alt="Alvino Technologies" width={180} height={180} className="object-contain relative z-10" />
             </div>
           </div>
         </div>
@@ -91,7 +91,7 @@ export default function AboutPage() {
             <h2 className="text-2xl font-extrabold text-gray-900 mb-4">To democratise world-class technology.</h2>
             <p className="text-gray-600 leading-relaxed">
               We believe exceptional software shouldn&apos;t be the exclusive preserve of companies
-              with massive engineering budgets. Inova Tech exists to give ambitious businesses — regardless
+              with massive engineering budgets. Alvino Technologies exists to give ambitious businesses — regardless
               of size — access to the same calibre of product thinking, design craft, and engineering
               rigour as the world&apos;s best tech companies.
             </p>
@@ -141,7 +141,7 @@ export default function AboutPage() {
       <section className="bg-gray-50 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Why Inova Tech</p>
+            <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Why Alvino Technologies</p>
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">What Makes Us Different</h2>
             <p className="mt-4 max-w-2xl mx-auto text-gray-500">
               We&apos;ve refined our approach across hundreds of projects. Here&apos;s what clients
@@ -290,3 +290,4 @@ export default function AboutPage() {
     </div>
   );
 }
+

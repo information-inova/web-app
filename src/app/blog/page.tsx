@@ -1,10 +1,10 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 import { posts } from "./data";
 
 export const metadata: Metadata = {
-  title: "Blog — Inova Tech",
-  description: "Engineering insights, product lessons, and technology deep-dives from the Inova Tech team.",
+  title: "Blog — Alvino Technologies",
+  description: "Engineering insights, product lessons, and technology deep-dives from the Alvino Technologies team.",
 };
 
 const tagColors: Record<string, string> = {
@@ -29,7 +29,7 @@ export default function BlogPage() {
           <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-4">Insights</p>
           <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
             From the
-            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> Inova Tech Blog</span>
+            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> Alvino Technologies Blog</span>
           </h1>
           <p className="mt-5 max-w-2xl mx-auto text-gray-500 text-lg">
             Engineering deep-dives, product lessons, and technology thinking from our team of 60 practitioners.
@@ -105,7 +105,7 @@ export default function BlogPage() {
         <div className="mx-auto max-w-2xl px-4 text-center">
           <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Newsletter</p>
           <h2 className="text-3xl font-extrabold text-gray-900">Stay in the Loop</h2>
-          <p className="mt-4 text-gray-500">Get new posts from the Inova Tech team delivered to your inbox — no spam, ever.</p>
+          <p className="mt-4 text-gray-500">Get new posts from the Alvino Technologies team delivered to your inbox — no spam, ever.</p>
           <form className="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input type="email" required placeholder="your@email.com"
               className="flex-1 rounded-full border border-gray-200 bg-white px-5 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none hover:border-indigo-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all" />
@@ -120,3 +120,4 @@ export default function BlogPage() {
     </div>
   );
 }
+

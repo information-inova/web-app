@@ -1,9 +1,9 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Solutions — Inova Tech",
-  description: "Discover how Inova Tech's tailored solutions help startups, SMEs, and enterprises solve real technology challenges and scale with confidence.",
+  title: "Solutions — Alvino Technologies",
+  description: "Discover how Alvino Technologies's tailored solutions help startups, SMEs, and enterprises solve real technology challenges and scale with confidence.",
 };
 
 const solutions = [
@@ -26,7 +26,7 @@ const solutions = [
   {
     tag: "Enterprise",
     title: "Digital Transformation",
-    desc: "Legacy systems don't have to slow you down. Inova Tech guides enterprise teams through modernisation — API-first architectures, cloud migrations, and workflow automation at scale.",
+    desc: "Legacy systems don't have to slow you down. Alvino Technologies guides enterprise teams through modernisation — API-first architectures, cloud migrations, and workflow automation at scale.",
     features: ["Legacy system assessment and migration planning","API-first microservices architecture","SSO, compliance, and enterprise security","Change management and team training"],
     cta: "Transform Your Enterprise",
     tagStyle: "bg-rose-50 text-rose-700",
@@ -68,7 +68,7 @@ export default function SolutionsPage() {
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-500">
             Whether you&apos;re validating an idea, scaling a product, or transforming an enterprise,
-            Inova Tech has a proven playbook tailored to where you are — and where you&apos;re going.
+            Alvino Technologies has a proven playbook tailored to where you are — and where you&apos;re going.
           </p>
         </div>
       </section>
@@ -101,11 +101,11 @@ export default function SolutionsPage() {
         </div>
       </section>
 
-      {/* ── Why Inova Tech ── */}
+      {/* ── Why Alvino Technologies ── */}
       <section className="bg-gray-50 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-14">
-            <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Why Choose Inova Tech</p>
+            <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Why Choose Alvino Technologies</p>
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">What Sets Us Apart</h2>
             <p className="mt-4 max-w-2xl mx-auto text-gray-500">
               We&apos;ve refined our approach across every project we take on.
@@ -141,3 +141,4 @@ export default function SolutionsPage() {
     </div>
   );
 }
+

@@ -1,4 +1,4 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import { notFound } from "next/navigation";
 import { posts } from "../data";
 
@@ -11,7 +11,7 @@ export async function generateMetadata(props: PageProps<"/blog/[slug]">) {
   const post = posts.find(p => p.slug === slug);
   if (!post) return {};
   return {
-    title: `${post.title} — Inova Blog`,
+    title: `${post.title} — Alvino Blog`,
     description: post.excerpt,
   };
 }
@@ -138,12 +138,12 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
               {post.tag}
             </span>
             <span className="ml-auto text-sm text-gray-500">Share:</span>
-            <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=https://inova.io/blog/${post.slug}`}
+            <a href={`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=https://Alvino.io/blog/${post.slug}`}
               target="_blank" rel="noopener noreferrer"
               className="rounded-full border border-gray-200 px-4 py-1.5 text-xs font-semibold text-gray-700 hover:border-indigo-300 hover:text-indigo-600 transition-all">
               X / Twitter
             </a>
-            <a href={`https://www.linkedin.com/sharing/share-offsite/?url=https://inova.io/blog/${post.slug}`}
+            <a href={`https://www.linkedin.com/sharing/share-offsite/?url=https://Alvino.io/blog/${post.slug}`}
               target="_blank" rel="noopener noreferrer"
               className="rounded-full border border-gray-200 px-4 py-1.5 text-xs font-semibold text-gray-700 hover:border-indigo-300 hover:text-indigo-600 transition-all">
               LinkedIn
@@ -178,7 +178,7 @@ export default async function BlogPostPage(props: PageProps<"/blog/[slug]">) {
       <section className="bg-white border-t border-gray-100 py-16 text-center">
         <div className="mx-auto max-w-xl px-4">
           <h2 className="text-2xl font-extrabold text-gray-900">Enjoyed this article?</h2>
-          <p className="mt-3 text-gray-500">Let&apos;s talk about how Inova can help you solve similar challenges.</p>
+          <p className="mt-3 text-gray-500">Let&apos;s talk about how Alvino can help you solve similar challenges.</p>
           <Link href="/contact"
             className="group mt-6 inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm font-bold text-white shadow-lg transition-all duration-200 hover:-translate-y-0.5 hover:shadow-xl"
             style={{background:"linear-gradient(135deg,#6366f1,#a855f7)"}}>

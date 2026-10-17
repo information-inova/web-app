@@ -1,9 +1,9 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Privacy Policy — Inova Tech",
-  description: "Inova Tech's privacy policy — how we collect, use, and protect your data.",
+  title: "Privacy Policy — Alvino Technologies",
+  description: "Alvino Technologies's privacy policy — how we collect, use, and protect your data.",
 };
 
 const sections = [
@@ -81,7 +81,7 @@ You can control cookies through your browser settings. Disabling analytics cooki
 - **Objection:** Object to processing based on legitimate interest
 - **Withdraw consent:** Where processing is based on consent, you can withdraw it at any time
 
-To exercise any of these rights, contact us at **information.inova@gmail.com**. We will respond within 30 days.`,
+To exercise any of these rights, contact us at **information.Alvino@gmail.com**. We will respond within 30 days.`,
   },
   {
     title: "8. Data Security",
@@ -105,7 +105,7 @@ No method of transmission over the internet is 100% secure. While we strive to p
     title: "11. Contact Us",
     content: `If you have any questions, concerns, or requests regarding this Privacy Policy or how we handle your data, please contact us:
 
-**Email:** information.inova@gmail.com  
+**Email:** information.Alvino@gmail.com  
 **Phone:** +91 8925246499  
 **Address:** Bangalore, India`,
   },
@@ -132,7 +132,7 @@ export default function PrivacyPage() {
           <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">Privacy Policy</h1>
           <p className="mt-4 text-gray-500">Last updated: October 2026</p>
           <p className="mt-4 max-w-2xl text-gray-600 leading-relaxed">
-            At Inova Tech, we respect your privacy and are committed to protecting your personal data.
+            At Alvino Technologies, we respect your privacy and are committed to protecting your personal data.
             This policy explains what information we collect, why we collect it, and how we use it.
           </p>
         </div>
@@ -183,3 +183,4 @@ export default function PrivacyPage() {
     </div>
   );
 }
+

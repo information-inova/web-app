@@ -1,4 +1,4 @@
-import Image from "next/image";
+﻿import Image from "next/image";
 import Link from "next/link";
 import { posts } from "./blog/data";
 
@@ -150,7 +150,7 @@ export default function Home() {
             </h1>
 
             <p className="mt-6 max-w-lg text-lg leading-relaxed text-gray-600">
-              Inova Tech architects, builds, and launches world-class digital products — from
+              Alvino Technologies architects, builds, and launches world-class digital products — from
               high-growth SaaS platforms and AI-powered tools to mobile apps and enterprise
               cloud solutions that drive measurable business outcomes.
             </p>
@@ -217,7 +217,7 @@ export default function Home() {
                 <span className="h-2.5 w-2.5 rounded-full bg-red-400" />
                 <span className="h-2.5 w-2.5 rounded-full bg-yellow-400" />
                 <span className="h-2.5 w-2.5 rounded-full bg-green-400" />
-                <span className="ml-3 text-gray-400 text-[11px] font-medium">inova.app — Dashboard</span>
+                <span className="ml-3 text-gray-400 text-[11px] font-medium">Alvino.app — Dashboard</span>
               </div>
               <div className="p-5">
                 <p className="text-sm font-bold text-gray-900">Build. Innovate. Grow.</p>
@@ -324,7 +324,7 @@ export default function Home() {
               End-to-End Technology Services
             </h2>
             <p className="mt-4 max-w-2xl mx-auto text-gray-500">
-              Inova Tech covers every phase of the product lifecycle — from design sprints and architecture
+              Alvino Technologies covers every phase of the product lifecycle — from design sprints and architecture
               decisions to launch, scaling, and ongoing optimisation.
             </p>
           </div>
@@ -358,13 +358,13 @@ export default function Home() {
       </section>
 
       {/* ════════════════════════════════════════════════════
-          WHY INOVA  —  light bg, logo visual on right
+          WHY Alvino  —  light bg, logo visual on right
       ════════════════════════════════════════════════════ */}
       <section className="bg-gray-50 py-24">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid gap-16 lg:grid-cols-2 items-center">
           {/* copy */}
           <div>
-            <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Why Inova Tech</p>
+            <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Why Alvino Technologies</p>
             <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl leading-tight">
               We Don&apos;t Just Build.
               <span className="block bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent">
@@ -372,7 +372,7 @@ export default function Home() {
               </span>
             </h2>
             <p className="mt-5 text-gray-600 leading-relaxed">
-              Inova Tech was founded on a simple belief: businesses deserve a technology partner
+              Alvino Technologies was founded on a simple belief: businesses deserve a technology partner
               that measures success the same way they do. Not by lines of code shipped or hours
               logged — but by real, compounding business value delivered.
             </p>
@@ -408,7 +408,7 @@ export default function Home() {
               {/* bg pattern */}
               <div aria-hidden className="absolute inset-0 opacity-10"
                 style={{backgroundImage:"radial-gradient(circle at 30% 30%, white 1px, transparent 1px), radial-gradient(circle at 70% 70%, white 1px, transparent 1px)",backgroundSize:"32px 32px"}} />
-              <Image src="/logo.png" alt="Inova Tech" width={200} height={200} className="object-contain relative z-10 w-32 sm:w-44 h-auto" />
+              <Image src="/alvino-logo.png" alt="Alvino Technologies" width={200} height={200} className="object-contain relative z-10 w-32 sm:w-44 h-auto" />
             </div>
             {/* floating accent squares — hidden on very small screens */}
             <div className="absolute -bottom-5 -right-5 h-24 w-24 rounded-2xl opacity-20 hidden sm:block"
@@ -542,7 +542,7 @@ export default function Home() {
           <div className="flex items-end justify-between mb-12">
             <div>
               <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-2">Insights</p>
-              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">From the Inova Tech Blog</h2>
+              <h2 className="text-3xl font-extrabold text-gray-900 sm:text-4xl">From the Alvino Technologies Blog</h2>
               <p className="mt-2 text-gray-500 max-w-xl">
                 Engineering deep-dives, product lessons, and AI insights from our team of practitioners.
               </p>
@@ -604,3 +604,4 @@ export default function Home() {
     </>
   );
 }
+

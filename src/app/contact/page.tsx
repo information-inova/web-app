@@ -1,13 +1,13 @@
-import type { Metadata } from "next";
+﻿import type { Metadata } from "next";
 import Link from "next/link";
 
 export const metadata: Metadata = {
-  title: "Contact — Inova Tech",
-  description: "Get in touch with Inova Tech. Tell us about your project and we'll respond within one business day.",
+  title: "Contact — Alvino Technologies",
+  description: "Get in touch with Alvino Technologies. Tell us about your project and we'll respond within one business day.",
 };
 
 const offices = [
-  { city: "India", address: "Bangalore, India", email: "information.inova@gmail.com", phone: "+91 8925246499" },
+  { city: "India", address: "Bangalore, India", email: "information.Alvino@gmail.com", phone: "+91 8925246499" },
 ];
 
 const faqs = [
@@ -117,7 +117,7 @@ export default function ContactPage() {
               <div className="flex gap-3">
                 {[
                   { label: "LinkedIn",  href: "https://www.linkedin.com/company/144016158/admin/edit/?editPageActiveTab=info" },
-                  { label: "Instagram", href: "https://www.instagram.com/inova_tech_solution?mdxt=MWFxMWJ5bm45aG5kcg==" },
+                  { label: "Instagram", href: "https://www.instagram.com/Alvino_tech_solution?mdxt=MWFxMWJ5bm45aG5kcg==" },
                   { label: "WhatsApp",  href: "https://wa.me/918925246499" },
                 ].map(s => (
                   <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"
@@ -152,3 +152,4 @@ export default function ContactPage() {
     </div>
   );
 }
+

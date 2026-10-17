@@ -1,9 +1,9 @@
-import Link from "next/link";
+﻿import Link from "next/link";
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Services — Inova Tech",
-  description: "Explore Inova Tech's full range of digital services: web development, mobile apps, cloud infrastructure, AI integration, and digital marketing.",
+  title: "Services — Alvino Technologies",
+  description: "Explore Alvino Technologies's full range of digital services: web development, mobile apps, cloud infrastructure, AI integration, and digital marketing.",
 };
 
 const services = [
@@ -76,7 +76,7 @@ export default function ServicesPage() {
             </span>
           </h1>
           <p className="mt-6 max-w-2xl mx-auto text-lg text-gray-500">
-            Whether you&apos;re a seed-stage startup or a scaling enterprise, Inova Tech delivers
+            Whether you&apos;re a seed-stage startup or a scaling enterprise, Alvino Technologies delivers
             end-to-end engineering, design, and marketing services under one roof.
           </p>
           <Link href="/contact"
@@ -152,3 +152,4 @@ export default function ServicesPage() {
     </div>
   );
 }
+

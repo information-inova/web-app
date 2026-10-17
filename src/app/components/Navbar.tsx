@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import Image from "next/image";
 import Link from "next/link";
@@ -39,10 +39,10 @@ export default function Navbar() {
       <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
         {/* Logo — always links to home */}
-        <Link href="/" className="flex items-center shrink-0" aria-label="Go to Inova Tech home">
+        <Link href="/" className="flex items-center shrink-0" aria-label="Go to Alvino Technologies home">
           <Image
-            src="/bg.png"
-            alt="Inova Tech"
+            src="/alvino-logo.png"
+            alt="Alvino Technologies"
             width={180}
             height={60}
             className={`w-auto object-contain transition-all duration-300 ${solid ? "h-12" : "h-16"}`}
@@ -139,3 +139,4 @@ export default function Navbar() {
     </header>
   );
 }
+
