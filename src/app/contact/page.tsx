@@ -7,11 +7,7 @@ export const metadata: Metadata = {
 };
 
 const offices = [
-<<<<<<< HEAD
-  { city: "India", address: "Bangalore, India", email: "information.inova@gmail.com", phone: "+91 8925246499" },
-=======
   { city: "India", address: "Bangalore, India", email: "alvinotechnologies@gmail.com", phone: "+91 8925246499" },
->>>>>>> origin/master
 ];
 
 const faqs = [
@@ -120,13 +116,8 @@ export default function ContactPage() {
               <p className="text-xs font-bold text-gray-500 uppercase tracking-widest mb-3">Follow Us</p>
               <div className="flex gap-3">
                 {[
-<<<<<<< HEAD
-                  { label: "LinkedIn",  href: "https://www.linkedin.com/company/inova-tech-solutions/?viewAsMember=true" },
-                  { label: "Instagram", href: "https://www.instagram.com/inova_tech_solution?mdxt=MWFxMWJ5bm45aG5kcg==" },
-=======
                   { label: "LinkedIn",  href: "https://www.linkedin.com/company/144016158/admin/edit/?editPageActiveTab=info" },
                   { label: "Instagram", href: "https://www.instagram.com/alvino_technologies?obrf=MWFxMWJ5bm45aG5kcg==" },
->>>>>>> origin/master
                   { label: "WhatsApp",  href: "https://wa.me/918925246499" },
                 ].map(s => (
                   <a key={s.label} href={s.href} target="_blank" rel="noopener noreferrer"

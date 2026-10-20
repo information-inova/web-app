@@ -397,21 +397,10 @@ export default function Home() {
             </Link>
           </div>
 
-<<<<<<< HEAD
-          {/* visual — logo on gradient card */}
-          <div className="relative flex justify-center overflow-hidden py-6">
-            <div className="relative h-56 w-56 sm:h-72 sm:w-72 rounded-3xl flex items-center justify-center shadow-2xl overflow-hidden"
-              style={{background:"linear-gradient(135deg,#6366f1,#a855f7)"}}>
-              {/* bg pattern */}
-              <div aria-hidden className="absolute inset-0 opacity-10"
-                style={{backgroundImage:"radial-gradient(circle at 30% 30%, white 1px, transparent 1px), radial-gradient(circle at 70% 70%, white 1px, transparent 1px)",backgroundSize:"32px 32px"}} />
-              <Image src="/logo.png" alt="Alvino Technologies" width={200} height={200} className="object-contain relative z-10 w-32 sm:w-44 h-auto" />
-=======
           {/* visual — logo on card */}
           <div className="relative flex justify-center overflow-hidden py-6">
             <div className="relative rounded-3xl flex items-center justify-center p-6 shadow-2xl bg-white border border-gray-100">
               <Image src="/web.jpeg" alt="Alvino Technologies" width={340} height={120} className="w-72 sm:w-96 h-auto object-contain" />
->>>>>>> origin/master
             </div>
             {/* floating accent squares — hidden on very small screens */}
             <div className="absolute -bottom-5 -right-5 h-24 w-24 rounded-2xl opacity-20 hidden sm:block"

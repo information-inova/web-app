@@ -36,26 +36,16 @@ export default function Navbar() {
           : "bg-white/0"
       }`}
     >
-<<<<<<< HEAD
-      <div className="mx-auto flex h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
-=======
       <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
->>>>>>> origin/master
 
         {/* Logo — always links to home */}
         <Link href="/" className="flex items-center shrink-0" aria-label="Go to Alvino Technologies home">
           <Image
             src="/web.jpeg"
             alt="Alvino Technologies"
-<<<<<<< HEAD
-            width={180}
-            height={60}
-            className={`w-auto object-contain transition-all duration-300 ${solid ? "h-12" : "h-16"}`}
-=======
             width={320}
             height={107}
             className={`w-auto object-contain transition-all duration-300 ${solid ? "h-14" : "h-18"}`}
->>>>>>> origin/master
             priority
           />
         </Link>

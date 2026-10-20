@@ -73,16 +73,8 @@ export default function AboutPage() {
             </p>
           </div>
           <div className="flex justify-center">
-<<<<<<< HEAD
-            <div className="relative h-72 w-72 rounded-3xl flex items-center justify-center shadow-xl overflow-hidden"
-              style={{background:"linear-gradient(135deg,#6366f1,#a855f7)"}}>
-              <div aria-hidden className="absolute inset-0 opacity-10"
-                style={{backgroundImage:"radial-gradient(circle at 30% 30%, white 1px, transparent 1px)",backgroundSize:"28px 28px"}} />
-              <Image src="/logo.png" alt="Alvino Technologies" width={180} height={180} className="object-contain relative z-10" />
-=======
             <div className="relative rounded-3xl flex items-center justify-center p-6 bg-white border border-gray-100 shadow-xl">
               <Image src="/web.jpeg" alt="Alvino Technologies" width={340} height={120} className="w-80 sm:w-96 h-auto object-contain" />
->>>>>>> origin/master
             </div>
           </div>
         </div>
