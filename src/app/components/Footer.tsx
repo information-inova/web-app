@@ -59,29 +59,29 @@ const socials = [
 export default function Footer() {
   return (
     <footer className="bg-white border-t border-gray-100 text-gray-500">
-      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-16 pb-8">
+      <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-12 pb-8">
 
         {/* ── Top grid ── */}
-        <div className="grid gap-12 md:grid-cols-2 lg:grid-cols-5 pb-12 border-b border-gray-100">
+        <div className="grid grid-cols-1 gap-10 sm:grid-cols-2 lg:grid-cols-5 pb-10 border-b border-gray-100">
 
           {/* Brand col */}
-          <div className="lg:col-span-2">
-            <Link href="/" className="inline-block mb-6">
+          <div className="sm:col-span-2 lg:col-span-2">
+            <Link href="/" className="inline-block mb-5">
               <Image
                 src="/web.jpeg"
                 alt="Alvino Technologies"
-                width={320}
-                height={107}
-                className="h-20 w-auto object-contain"
+                width={280}
+                height={93}
+                className="h-12 sm:h-16 w-auto object-contain"
               />
             </Link>
-            <p className="text-base leading-relaxed text-gray-500 max-w-xs">
+            <p className="text-sm sm:text-base leading-relaxed text-gray-500 max-w-xs">
               Alvino Technologies is a full-service digital innovation studio. We design, build,
               and scale technology that turns ambitious ideas into products people love.
             </p>
 
             {/* Social icons */}
-            <div className="mt-6 flex gap-3">
+            <div className="mt-5 flex gap-3">
               {socials.map(s => (
                 <a
                   key={s.label}
@@ -97,9 +97,16 @@ export default function Footer() {
             </div>
 
             {/* Contact */}
-            <div className="mt-8 space-y-2.5">
+            <div className="mt-6 space-y-2.5">
               <a href="mailto:alvinotechnologies@gmail.com"
-                className="flex items-center gap-2 text-base text-gray-500 hover:text-indigo-600 transition-colors">
+                className="flex items-center gap-2 text-sm sm:text-base text-gray-500 hover:text-indigo-600 transition-colors break-all">
+                <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
+                </svg>
+                alvinotechnologies@gmail.com
+              </a>
+              <a href="tel:+918925246499"
+                className="flex items-center gap-2 text-sm sm:text-base text-gray-500 hover:text-indigo-600 transition-colors">
                 <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.1 6.1l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
                 </svg>
@@ -108,18 +115,18 @@ export default function Footer() {
             </div>
           </div>
 
-          {/* Link groups */}
+          {/* Link groups — each gets its own column, stacks nicely on mobile */}
           {Object.entries(links).map(([group, items]) => (
             <div key={group}>
-              <h3 className="mb-5 text-sm font-bold uppercase tracking-widest text-gray-900">
+              <h3 className="mb-4 text-xs sm:text-sm font-bold uppercase tracking-widest text-gray-900">
                 {group}
               </h3>
-              <ul className="space-y-3.5">
+              <ul className="space-y-3">
                 {items.map(item => (
                   <li key={item.label}>
                     <Link
                       href={item.href}
-                      className="text-base text-gray-500 hover:text-indigo-600 transition-colors duration-200"
+                      className="text-sm sm:text-base text-gray-500 hover:text-indigo-600 transition-colors duration-200"
                     >
                       {item.label}
                     </Link>
@@ -131,11 +138,11 @@ export default function Footer() {
         </div>
 
         {/* ── Bottom bar ── */}
-        <div className="pt-8 flex flex-col items-center gap-3 sm:flex-row sm:justify-between">
-          <p className="text-sm text-gray-400">
+        <div className="pt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-between text-center sm:text-left">
+          <p className="text-xs sm:text-sm text-gray-400">
             © <FooterYear /> Alvino Technologies Ltd. All rights reserved.
           </p>
-          <div className="flex items-center gap-1 text-sm text-gray-400">
+          <div className="flex items-center gap-1 text-xs sm:text-sm text-gray-400">
             <span className="h-1 w-1 rounded-full bg-indigo-500 inline-block" />
             <span className="mx-1">Innovate</span>
             <span className="h-1 w-1 rounded-full bg-indigo-500 inline-block" />
@@ -143,9 +150,9 @@ export default function Footer() {
             <span className="h-1 w-1 rounded-full bg-indigo-500 inline-block" />
             <span className="mx-1">Transform</span>
           </div>
-          <div className="flex gap-5 text-sm">
-            <Link href="/privacy" className="hover:text-gray-300 transition-colors">Privacy</Link>
-            <Link href="/terms" className="hover:text-gray-300 transition-colors">Terms</Link>
+          <div className="flex gap-5 text-xs sm:text-sm">
+            <Link href="/privacy" className="text-gray-400 hover:text-indigo-600 transition-colors">Privacy</Link>
+            <Link href="/terms" className="text-gray-400 hover:text-indigo-600 transition-colors">Terms</Link>
           </div>
         </div>
 

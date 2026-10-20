@@ -36,7 +36,7 @@ export default function Navbar() {
           : "bg-white/0"
       }`}
     >
-      <div className="mx-auto flex h-24 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
+      <div className="mx-auto flex h-16 sm:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
         {/* Logo — always links to home */}
         <Link href="/" className="flex items-center shrink-0" aria-label="Go to Alvino Technologies home">
@@ -45,7 +45,7 @@ export default function Navbar() {
             alt="Alvino Technologies"
             width={320}
             height={107}
-            className={`w-auto object-contain transition-all duration-300 ${solid ? "h-14" : "h-18"}`}
+            className={`w-auto object-contain transition-all duration-300 ${solid ? "h-9 sm:h-12" : "h-10 sm:h-14"}`}
             priority
           />
         </Link>
