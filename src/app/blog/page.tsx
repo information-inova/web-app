@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 const tagColors: Record<string, string> = {
   Engineering: "bg-blue-50 text-blue-600",
-  Product:     "bg-purple-50 text-purple-600",
+  Product:     "bg-blue-50 text-blue-500",
   AI:          "bg-rose-50 text-rose-600",
   Mobile:      "bg-green-50 text-green-600",
   Cloud:       "bg-sky-50 text-sky-600",
@@ -24,12 +24,12 @@ export default function BlogPage() {
       {/* ── Hero ── white, no dark bg */}
       <section className="bg-white border-b border-gray-100 py-20 relative overflow-hidden">
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{background:"radial-gradient(ellipse at 70% 50%, rgba(99,102,241,0.06) 0%, transparent 60%)"}} />
+          style={{background:"radial-gradient(ellipse at 70% 50%, rgba(0,68,187,0.06) 0%, transparent 60%)"}} />
         <div className="relative mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
-          <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-4">Insights</p>
+          <p className="text-xs font-bold tracking-[0.3em] text-blue-600 uppercase mb-4">Insights</p>
           <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">
             From the
-            <span className="bg-gradient-to-r from-indigo-600 to-purple-600 bg-clip-text text-transparent"> Alvino Technologies Blog</span>
+            <span className="bg-gradient-to-r from-blue-700 to-blue-500 bg-clip-text text-transparent"> Alvino Technologies Blog</span>
           </h1>
           <p className="mt-5 max-w-2xl mx-auto text-gray-500 text-lg">
             Engineering deep-dives, product lessons, and technology thinking from our team of 60 practitioners.
@@ -53,13 +53,13 @@ export default function BlogPage() {
                 </span>
                 <span className="text-xs text-gray-400 font-medium">Featured</span>
               </div>
-              <h2 className="text-2xl font-extrabold text-gray-900 leading-tight group-hover:text-indigo-600 transition-colors duration-200 sm:text-3xl">
+              <h2 className="text-2xl font-extrabold text-gray-900 leading-tight group-hover:text-blue-600 transition-colors duration-200 sm:text-3xl">
                 {featured.title}
               </h2>
               <p className="mt-4 text-gray-500 leading-relaxed">{featured.excerpt}</p>
               <div className="mt-6 flex items-center gap-4">
                 <div className="flex h-9 w-9 items-center justify-center rounded-full text-white text-xs font-bold shrink-0"
-                  style={{background:"linear-gradient(135deg,#6366f1,#a855f7)"}}>
+                  style={{background:"linear-gradient(135deg,#0044bb,#0099ff)"}}>
                   {featured.author.charAt(0)}
                 </div>
                 <div>
@@ -82,13 +82,13 @@ export default function BlogPage() {
                 <span className={`inline-block self-start rounded-full px-3 py-1 text-xs font-semibold mb-4 ${tagColors[p.tag] ?? "bg-gray-100 text-gray-600"}`}>
                   {p.tag}
                 </span>
-                <h3 className="text-base font-bold text-gray-900 leading-snug group-hover:text-indigo-600 transition-colors duration-200 flex-1">
+                <h3 className="text-base font-bold text-gray-900 leading-snug group-hover:text-blue-600 transition-colors duration-200 flex-1">
                   {p.title}
                 </h3>
                 <p className="mt-3 text-sm text-gray-500 leading-relaxed line-clamp-3">{p.excerpt}</p>
                 <div className="mt-5 flex items-center gap-3 pt-5 border-t border-gray-100">
                   <div className="flex h-7 w-7 items-center justify-center rounded-full text-white text-[10px] font-bold shrink-0"
-                    style={{background:"linear-gradient(135deg,#6366f1,#a855f7)"}}>
+                    style={{background:"linear-gradient(135deg,#0044bb,#0099ff)"}}>
                     {p.author.charAt(0)}
                   </div>
                   <p className="text-xs text-gray-600 font-medium">{p.author}</p>
@@ -103,15 +103,15 @@ export default function BlogPage() {
       {/* ── Newsletter CTA ── light, no dark bg */}
       <section className="bg-gray-50 border-t border-gray-100 py-12 sm:py-20">
         <div className="mx-auto max-w-2xl px-4 text-center">
-          <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Newsletter</p>
+          <p className="text-xs font-bold tracking-[0.3em] text-blue-600 uppercase mb-3">Newsletter</p>
           <h2 className="text-3xl font-extrabold text-gray-900">Stay in the Loop</h2>
           <p className="mt-4 text-gray-500">Get new posts from the Alvino Technologies team delivered to your inbox — no spam, ever.</p>
           <form className="mt-8 flex flex-col sm:flex-row gap-3 max-w-md mx-auto">
             <input type="email" required placeholder="your@email.com"
-              className="flex-1 rounded-full border border-gray-200 bg-white px-5 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none hover:border-indigo-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-500/20 transition-all" />
+              className="flex-1 rounded-full border border-gray-200 bg-white px-5 py-3 text-sm text-gray-900 placeholder-gray-400 outline-none hover:border-blue-300 focus:border-blue-500 focus:ring-2 focus:ring-blue-500/20 transition-all" />
             <button type="submit"
               className="rounded-full px-6 py-3 text-sm font-bold text-white hover:-translate-y-0.5 hover:shadow-lg transition-all duration-200"
-              style={{background:"linear-gradient(135deg,#6366f1,#a855f7)"}}>
+              style={{background:"linear-gradient(135deg,#0044bb,#0099ff)"}}>
               Subscribe →
             </button>
           </form>

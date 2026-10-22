@@ -4,22 +4,22 @@ import FooterYear from "./FooterYear";
 
 const links = {
   Company: [
-    { label: "About Us", href: "/about"   },
-    { label: "Blog",     href: "/blog"    },
-    { label: "Contact",  href: "/contact" },
+    { label: "About Us",  href: "/about"   },
+    { label: "Blog",      href: "/blog"    },
+    { label: "Contact",   href: "/contact" },
   ],
   Services: [
-    { label: "Web Development",   href: "/services" },
-    { label: "Mobile Apps",       href: "/services" },
-    { label: "Cloud & DevOps",    href: "/services" },
-    { label: "Digital Marketing", href: "/services" },
-    { label: "AI & Automation",   href: "/services" },
+    { label: "Website Development",      href: "/services" },
+    { label: "Business Software",        href: "/services" },
+    { label: "Digital Presence",         href: "/services" },
+    { label: "E-commerce & Catalogues",  href: "/services" },
+    { label: "Technology Consulting",    href: "/services" },
   ],
   Solutions: [
-    { label: "Startup Launchpad",    href: "/solutions" },
-    { label: "Scale & Optimise",     href: "/solutions" },
-    { label: "Enterprise Transform", href: "/solutions" },
-    { label: "AI-Powered Products",  href: "/solutions" },
+    { label: "Online Presence",      href: "/solutions" },
+    { label: "Business Operations",  href: "/solutions" },
+    { label: "Online Sales",         href: "/solutions" },
+    { label: "Custom Software",      href: "/solutions" },
   ],
 };
 
@@ -42,7 +42,7 @@ const socials = [
         <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838a6.162 6.162 0 1 0 0 12.324 6.162 6.162 0 0 0 0-12.324zM12 16a4 4 0 1 1 0-8 4 4 0 0 1 0 8zm6.406-11.845a1.44 1.44 0 1 0 0 2.881 1.44 1.44 0 0 0 0-2.881z"/>
       </svg>
     ),
-    hover: "hover:bg-pink-600",
+    hover: "hover:bg-blue-500",
   },
   {
     label: "WhatsApp",
@@ -76,8 +76,8 @@ export default function Footer() {
               />
             </Link>
             <p className="text-sm sm:text-base leading-relaxed text-gray-500 max-w-xs">
-              Alvino Technologies is a full-service digital innovation studio. We design, build,
-              and scale technology that turns ambitious ideas into products people love.
+              Alvino Technologies helps small and medium-sized businesses improve their digital presence,
+              simplify operations, and grow through practical technology solutions.
             </p>
 
             {/* Social icons */}
@@ -99,14 +99,14 @@ export default function Footer() {
             {/* Contact */}
             <div className="mt-6 space-y-2.5">
               <a href="mailto:alvinotechnologies@gmail.com"
-                className="flex items-center gap-2 text-sm sm:text-base text-gray-500 hover:text-indigo-600 transition-colors break-all">
+                className="flex items-center gap-2 text-sm sm:text-base text-gray-500 hover:text-blue-600 transition-colors break-all">
                 <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/>
                 </svg>
                 alvinotechnologies@gmail.com
               </a>
               <a href="tel:+918925246499"
-                className="flex items-center gap-2 text-sm sm:text-base text-gray-500 hover:text-indigo-600 transition-colors">
+                className="flex items-center gap-2 text-sm sm:text-base text-gray-500 hover:text-blue-600 transition-colors">
                 <svg className="h-4 w-4 shrink-0" fill="none" stroke="currentColor" strokeWidth="1.8" viewBox="0 0 24 24">
                   <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.69 13a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.6 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 9.91a16 16 0 0 0 6.1 6.1l.91-.91a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
                 </svg>
@@ -126,7 +126,7 @@ export default function Footer() {
                   <li key={item.label}>
                     <Link
                       href={item.href}
-                      className="text-sm sm:text-base text-gray-500 hover:text-indigo-600 transition-colors duration-200"
+                      className="text-sm sm:text-base text-gray-500 hover:text-blue-600 transition-colors duration-200"
                     >
                       {item.label}
                     </Link>
@@ -140,19 +140,19 @@ export default function Footer() {
         {/* ── Bottom bar ── */}
         <div className="pt-6 flex flex-col items-center gap-3 sm:flex-row sm:justify-between text-center sm:text-left">
           <p className="text-xs sm:text-sm text-gray-400">
-            © <FooterYear /> Alvino Technologies Ltd. All rights reserved.
+            © <FooterYear /> Alvino Technologies. All rights reserved.
           </p>
           <div className="flex items-center gap-1 text-xs sm:text-sm text-gray-400">
-            <span className="h-1 w-1 rounded-full bg-indigo-500 inline-block" />
-            <span className="mx-1">Innovate</span>
-            <span className="h-1 w-1 rounded-full bg-indigo-500 inline-block" />
-            <span className="mx-1">Build</span>
-            <span className="h-1 w-1 rounded-full bg-indigo-500 inline-block" />
-            <span className="mx-1">Transform</span>
+            <span className="h-1 w-1 rounded-full bg-blue-500 inline-block" />
+            <span className="mx-1">Practical</span>
+            <span className="h-1 w-1 rounded-full bg-blue-500 inline-block" />
+            <span className="mx-1">Honest</span>
+            <span className="h-1 w-1 rounded-full bg-blue-500 inline-block" />
+            <span className="mx-1">Business-Focused</span>
           </div>
-          <div className="flex gap-5 text-xs sm:text-sm">
-            <Link href="/privacy" className="text-gray-400 hover:text-indigo-600 transition-colors">Privacy</Link>
-            <Link href="/terms" className="text-gray-400 hover:text-indigo-600 transition-colors">Terms</Link>
+          <div className="flex gap-5 text-xs sm:text-sm text-gray-400">
+            <Link href="/privacy" className="hover:text-gray-600 transition-colors">Privacy Policy</Link>
+            <Link href="/terms"   className="hover:text-gray-600 transition-colors">Terms of Service</Link>
           </div>
         </div>
 

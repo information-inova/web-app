@@ -7,17 +7,17 @@ import { usePathname } from "next/navigation";
 
 const navLinks = [
   { label: "About",     href: "/about"     },
-  { label: "Blog",      href: "/blog"      },
   { label: "Services",  href: "/services"  },
   { label: "Solutions", href: "/solutions" },
+  { label: "Blog",      href: "/blog"      },
   { label: "Contact",   href: "/contact"   },
 ];
 
 export default function Navbar() {
-  const [scrolled, setScrolled] = useState(false);
-  const [menuOpen, setMenuOpen] = useState(false);
-  const pathname               = usePathname();
-  const isHome                 = pathname === "/";
+  const [scrolled, setScrolled]   = useState(false);
+  const [menuOpen, setMenuOpen]   = useState(false);
+  const pathname                  = usePathname();
+  const isHome                    = pathname === "/";
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 20);
@@ -38,7 +38,7 @@ export default function Navbar() {
     >
       <div className="mx-auto flex h-16 sm:h-20 max-w-7xl items-center justify-between px-4 sm:px-6 lg:px-8">
 
-        {/* Logo — always links to home */}
+        {/* Logo */}
         <Link href="/" className="flex items-center shrink-0" aria-label="Go to Alvino Technologies home">
           <Image
             src="/web.jpeg"
@@ -52,7 +52,7 @@ export default function Navbar() {
 
         {/* Desktop nav */}
         <nav aria-label="Main navigation" className="hidden md:block">
-          <ul className="flex items-center gap-8">
+          <ul className="flex items-center gap-7">
             {navLinks.map((link) => {
               const active = pathname.startsWith(link.href);
               return (
@@ -62,11 +62,10 @@ export default function Navbar() {
                     className={`relative text-sm font-medium transition-colors duration-200
                       after:absolute after:-bottom-1 after:left-0 after:h-0.5 after:w-full
                       after:origin-left after:scale-x-0 after:rounded-full
-                      after:bg-gradient-to-r after:from-indigo-600 after:to-purple-600
+                      after:bg-gradient-to-r after:from-blue-600 after:to-blue-500
                       after:transition-transform after:duration-200
-                      hover:after:scale-x-100
-                      text-gray-700 hover:text-indigo-600
-                      ${active ? "text-indigo-600 after:scale-x-100" : ""}
+                      hover:after:scale-x-100 text-gray-700 hover:text-blue-600
+                      ${active ? "text-blue-600 after:scale-x-100" : ""}
                     `}
                   >
                     {link.label}
@@ -77,14 +76,14 @@ export default function Navbar() {
           </ul>
         </nav>
 
-        {/* Right side: CTA */}
+        {/* CTA */}
         <div className="hidden md:flex items-center gap-3">
           <Link
             href="/contact"
             className="inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-sm font-semibold text-white shadow-md transition-all duration-200 hover:shadow-lg hover:-translate-y-0.5"
-            style={{background:"linear-gradient(135deg,#4f7df9,#a855f7)"}}
+            style={{ background: "linear-gradient(135deg,#0044bb,#0099ff)" }}
           >
-            Let&apos;s Build Together →
+            Discuss Your Project →
           </Link>
         </div>
 
@@ -115,8 +114,8 @@ export default function Navbar() {
               <li key={link.label}>
                 <Link
                   href={link.href}
-                  className={`block rounded-lg px-4 py-3 text-sm font-medium transition-colors duration-200 hover:bg-indigo-50 hover:text-indigo-600 ${
-                    pathname.startsWith(link.href) ? "bg-indigo-50 text-indigo-600" : "text-gray-700"
+                  className={`block rounded-lg px-4 py-3 text-sm font-medium transition-colors duration-200 hover:bg-blue-50 hover:text-blue-600 ${
+                    pathname.startsWith(link.href) ? "bg-blue-50 text-blue-600" : "text-gray-700"
                   }`}
                   onClick={() => setMenuOpen(false)}
                 >
@@ -128,10 +127,10 @@ export default function Navbar() {
           <div className="px-4 pb-4">
             <Link
               href="/contact"
-              className="block w-full rounded-full bg-gradient-to-r from-blue-600 to-purple-600 px-5 py-3 text-center text-sm font-semibold text-white"
+              className="block w-full rounded-full bg-gradient-to-r from-blue-700 to-blue-500 px-5 py-3 text-center text-sm font-semibold text-white"
               onClick={() => setMenuOpen(false)}
             >
-              Let&apos;s Build Together →
+              Discuss Your Project →
             </Link>
           </div>
         </div>

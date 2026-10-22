@@ -118,17 +118,17 @@ export default function PrivacyPage() {
       {/* Hero */}
       <section className="bg-white border-b border-gray-100 py-14 relative overflow-hidden">
         <div aria-hidden className="pointer-events-none absolute inset-0"
-          style={{background:"radial-gradient(ellipse at 70% 50%, rgba(99,102,241,0.05) 0%, transparent 60%)"}} />
+          style={{background:"radial-gradient(ellipse at 70% 50%, rgba(0,68,187,0.05) 0%, transparent 60%)"}} />
         <div className="relative mx-auto max-w-4xl px-4 sm:px-6 lg:px-8">
           {/* Back button */}
           <Link href="/"
-            className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-indigo-600 transition-colors mb-8 group">
+            className="inline-flex items-center gap-2 text-sm font-medium text-gray-500 hover:text-blue-600 transition-colors mb-8 group">
             <svg className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
               <path d="M19 12H5M12 5l-7 7 7 7"/>
             </svg>
             Back to Home
           </Link>
-          <p className="text-xs font-bold tracking-[0.3em] text-indigo-600 uppercase mb-3">Legal</p>
+          <p className="text-xs font-bold tracking-[0.3em] text-blue-600 uppercase mb-3">Legal</p>
           <h1 className="text-4xl font-extrabold text-gray-900 sm:text-5xl">Privacy Policy</h1>
           <p className="mt-4 text-gray-500">Last updated: October 2026</p>
           <p className="mt-4 max-w-2xl text-gray-600 leading-relaxed">
@@ -164,14 +164,14 @@ export default function PrivacyPage() {
           {/* Bottom nav */}
           <div className="mt-12 flex flex-col sm:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-200">
             <Link href="/"
-              className="group inline-flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-indigo-600 transition-colors">
+              className="group inline-flex items-center gap-2 text-sm font-semibold text-gray-600 hover:text-blue-600 transition-colors">
               <svg className="h-4 w-4 transition-transform duration-200 group-hover:-translate-x-0.5" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path d="M19 12H5M12 5l-7 7 7 7"/>
               </svg>
               Back to Home
             </Link>
             <Link href="/terms"
-              className="inline-flex items-center gap-2 text-sm font-semibold text-indigo-600 hover:text-indigo-700 transition-colors">
+              className="inline-flex items-center gap-2 text-sm font-semibold text-blue-600 hover:text-blue-700 transition-colors">
               View Terms of Service
               <svg className="h-4 w-4" fill="none" stroke="currentColor" strokeWidth="2" viewBox="0 0 24 24">
                 <path d="M5 12h14M12 5l7 7-7 7"/>
